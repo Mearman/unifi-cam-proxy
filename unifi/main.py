@@ -6,7 +6,7 @@ from shutil import which
 
 import coloredlogs
 
-from unifi.cams import (
+from cams import (
     DahuaCam,
     FrigateCam,
     HikvisionCam,
@@ -14,8 +14,8 @@ from unifi.cams import (
     ReolinkNVRCam,
     RTSPCam,
 )
-from unifi.core import Core
-from unifi.version import __version__
+from core import Core
+from version import __version__
 
 CAMS = {
     "amcrest": DahuaCam,
@@ -80,6 +80,10 @@ def parse_args():
     )
     parser.add_argument(
         "--verbose", "-v", action="store_true", help="increase output verbosity"
+    )
+
+    parser.add_argument(
+        "--ffmpeg-args", "-ff", action="store_true", help="ffmpeg args"
     )
 
     sp = parser.add_subparsers(

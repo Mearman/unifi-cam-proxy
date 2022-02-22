@@ -6,7 +6,7 @@ from pathlib import Path
 
 from aiohttp import web
 
-from unifi.cams.base import UnifiCamBase
+from cams.base import UnifiCamBase
 
 
 class RTSPCam(UnifiCamBase):

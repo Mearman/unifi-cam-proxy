@@ -7,7 +7,7 @@ from pathlib import Path
 import aiohttp
 from yarl import URL
 
-from unifi.cams.base import UnifiCamBase
+from cams.base import UnifiCamBase
 
 
 class Reolink(UnifiCamBase):

@@ -10,8 +10,8 @@ import backoff
 from asyncio_mqtt import Client
 from asyncio_mqtt.error import MqttError
 
-from unifi.cams.base import SmartDetectObjectType
-from unifi.cams.rtsp import RTSPCam
+from cams.base import SmartDetectObjectType
+from cams.rtsp import RTSPCam
 
 
 class FrigateCam(RTSPCam):
