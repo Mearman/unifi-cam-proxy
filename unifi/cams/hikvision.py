@@ -10,7 +10,7 @@ import httpx
 import xmltodict
 from hikvisionapi import AsyncClient
 
-from unifi.cams.base import UnifiCamBase
+from cams.base import UnifiCamBase
 
 
 class HikvisionCam(UnifiCamBase):

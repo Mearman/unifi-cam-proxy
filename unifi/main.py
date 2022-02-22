@@ -6,7 +6,7 @@ from shutil import which
 
 import coloredlogs
 
-from unifi.cams import (
+from cams import (
     DahuaCam,
     FrigateCam,
     HikvisionCam,
@@ -14,8 +14,8 @@ from unifi.cams import (
     ReolinkNVRCam,
     RTSPCam,
 )
-from unifi.core import Core
-from unifi.version import __version__
+from core import Core
+from version import __version__
 
 CAMS = {
     "amcrest": DahuaCam,

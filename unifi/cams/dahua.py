@@ -7,7 +7,7 @@ import httpx
 from amcrest import AmcrestCamera
 from amcrest.exceptions import CommError
 
-from unifi.cams.base import RetryableError, SmartDetectObjectType, UnifiCamBase
+from cams.base import RetryableError, SmartDetectObjectType, UnifiCamBase
 
 
 class DahuaCam(UnifiCamBase):
