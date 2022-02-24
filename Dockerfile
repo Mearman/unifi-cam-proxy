@@ -3,6 +3,7 @@ WORKDIR /app
 
 RUN apk add --update gcc libc-dev linux-headers libusb-dev
 RUN apk add --update ffmpeg=4.1.6-r0 netcat-openbsd git
+RUN apk add --update bash
 
 COPY . .
 RUN pip install .
